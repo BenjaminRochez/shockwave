@@ -1,0 +1,33 @@
+@import 'reset';
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.s-container{
+  width: 100%;
+  padding:  0 30px;
+  margin: 0 auto;
+}
+
+$orange: #f39723;
+
+.s-button{
+  background: transparent;
+  padding: 10px 30px;
+  border: 2px solid $orange;
+  color: $orange;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  &:hover{
+    background: $orange;
+    color: #fff;
+  }
+}
+
+@import 'globals';
+@import 'nav';

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+*, *:after, *:before{
+  box-sizing: border-box;
+  outline: none;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.oa-clearfix{
+  clear: both;
+}

@@ -1,0 +1,36 @@
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="import.css"/>
+  </head>
+  <body>
+    <div class="s-hamburger">
+      <button class="s-button" onclick="toggleMenu()">Menu</button>
+    </div>
+    <nav class="s-nav is-closed" id="nav">
+      <div class="s-container">
+        <div class="s-logo"><img src="assets/shockwave_logo.png"/></div>
+        <ul class="s-link__container">
+          <li><a class="s-nav__link" href="#"> Accueil</a></li>
+          <li><a class="s-nav__link" href="#"> A propos</a></li>
+          <li><a class="s-nav__link" href="#"> Services</a></li>
+          <li><a class="s-nav__link" href="#"> Partenaires</a></li>
+          <li><a class="s-nav__link" href="#"> Contact</a></li>
+          <div class="s-nav__button">
+            <button class="s-button">Espace pro</button>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <script src="app.min.js"></script>
+    <script>
+      function toggleMenu() {
+          var nav =document.getElementById("nav");
+          nav.classList.toggle('is-closed');
+      }
+    </script>
+  </body>
+</html>

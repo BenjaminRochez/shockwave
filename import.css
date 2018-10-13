@@ -1,0 +1,124 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.s-container {
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto; }
+
+.s-button {
+  background: transparent;
+  padding: 10px 30px;
+  border: 2px solid #f39723;
+  color: #f39723;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px; }
+  .s-button:hover {
+    background: #f39723;
+    color: #fff; }
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  outline: none; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+.oa-clearfix {
+  clear: both; }
+
+.s-nav {
+  width: 100%;
+  height: 100vh;
+  background: #373736;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  left: 0;
+  top: 0; }
+  .s-nav.is-closed {
+    transform: translateX(-100%); }
+  .s-nav .s-link__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%); }
+
+.s-logo {
+  width: 100%;
+  padding: 20px 0; }
+  .s-logo img {
+    max-width: 100%; }
+
+.s-nav__link {
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.9;
+  text-decoration: none;
+  display: block;
+  padding: 30px 0;
+  font-size: 18px; }
+  .s-nav__link:hover {
+    opacity: 1; }
+
+.s-nav__button {
+  margin-top: 30px; }

@@ -1,0 +1,32 @@
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700", rel="stylesheet")
+        link(rel="stylesheet", href="import.css")
+    body
+        div.s-hamburger
+            button.s-button(onclick="toggleMenu()") Menu
+        nav.s-nav.is-closed#nav
+            div.s-container
+                div.s-logo
+                    img(src="assets/shockwave_logo.png")
+                ul.s-link__container
+                    li
+                        a.s-nav__link(href="#")  Accueil
+                    li
+                        a.s-nav__link(href="#")  A propos
+                    li
+                        a.s-nav__link(href="#")  Services
+                    li
+                        a.s-nav__link(href="#")  Partenaires
+                    li
+                        a.s-nav__link(href="#")  Contact
+                    div.s-nav__button
+                        button.s-button Espace pro
+        script(src="app.min.js")
+        script.
+            function toggleMenu() {
+                var nav =document.getElementById("nav");
+                nav.classList.toggle('is-closed');
+            }
